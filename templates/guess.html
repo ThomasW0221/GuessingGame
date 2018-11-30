@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess</title>
+</head>
+<body>
+    <h1>Enter your guess below</h1>
+    <p1>number of guesses: {{ game.num_guesses }}</p1>
+    <p>guess status: {{ game.guess_status }}</p>
+
+    <form method="POST" action="./guess">
+        <input type="text" name="guess">
+        <input type="submit" name="make_guess">
+    </form>
+</body>
+</html>
